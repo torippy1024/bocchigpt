@@ -20,6 +20,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "@line/bot-sdk": "^7.5.2"
+    "@line/bot-sdk": "^7.5.2",
+    "openai": "^3.2.1"
   }
 }
