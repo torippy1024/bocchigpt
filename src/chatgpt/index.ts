@@ -1,4 +1,7 @@
-import {CreateChatCompletionResponse} from 'openai';
+import {
+  CreateChatCompletionRequest,
+  CreateChatCompletionResponse,
+} from 'openai';
 
 const fetchChatGPT = (
   prompt: string = 'こんにちは',
@@ -6,7 +9,7 @@ const fetchChatGPT = (
 ) => {
   const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
-  const param = {
+  const param: CreateChatCompletionRequest = {
     model: 'gpt-3.5-turbo',
     messages: [
       {role: 'system', content: rolePrompt},
